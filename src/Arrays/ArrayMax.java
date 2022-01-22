@@ -1,4 +1,4 @@
-package com.keshav.Arrays;
+package Arrays;
 
 public class ArrayMax {
     public static void main(String[] args) {

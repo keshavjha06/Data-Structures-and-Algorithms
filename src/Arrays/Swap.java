@@ -1,4 +1,4 @@
-package com.keshav.Arrays;
+package Arrays;
 
 import java.util.Arrays;
 
