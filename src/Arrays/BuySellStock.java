@@ -5,15 +5,14 @@ import java.util.Scanner;
 public class BuySellStock {
     public static void main(String[] args) {
 
-       // int[] n = {7, 1, 5, 3, 6, 4};
-        Scanner sc=new Scanner(System.in);
+        // int[] n = {7, 1, 5, 3, 6, 4};
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of elements: ");
-        int n=sc.nextInt();
+        int n = sc.nextInt();
         int[] arr = new int[n];
-        for (int i =0;i<arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.println("Enter the Elements : ");
-            int a = sc.nextInt();
-            arr[i] = a;
+            arr[i] = sc.nextInt();
         }
         System.out.println(maxProfit(arr));
     }

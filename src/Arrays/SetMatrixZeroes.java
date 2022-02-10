@@ -1,13 +1,11 @@
 package Arrays;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SetMatrixZeroes {
     public static void main(String[] args) {
         int[][] nums = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
         setZeroes(nums);
-
     }
 
     public static void setZeroes(int[][] matrix) {
