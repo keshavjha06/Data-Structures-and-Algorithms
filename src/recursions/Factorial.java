@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
+//        int fact_value = factorial(5);
+//        System.out.println(fact_value);
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         if (n < 0) {
