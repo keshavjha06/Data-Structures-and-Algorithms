@@ -127,8 +127,8 @@ public class LinkedListExercises {
         //  l.printLinkedList(head);
         l.addNodeAtIndex(75, 3);
 //       l.removeNodeAtAGivenIndex(2);
-//        l.deleteNodeEnd();
-//        l.deleteFirstNode();
+        l.deleteNodeEnd();
+        l.deleteFirstNode();
         l.printLinkedList(head);
         l.reverseLinkedList();
     }
