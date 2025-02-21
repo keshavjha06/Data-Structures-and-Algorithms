@@ -12,7 +12,7 @@ public class ArrayBasics {
         int[] b = new int[4];
         System.out.println(a[0]);
         System.out.println(a[a.length]);
-        System.out.println(a[k]);
+//        System.out.println(a[k]);
         a[0] = 6;
         int n = a.length;
 
@@ -34,7 +34,7 @@ public class ArrayBasics {
         }
 
         Integer[] c = new Integer[] {1, 2, 3};
-        List<Integer> list1 = Arrays.stream().boxed().collect(Collectors.toList());
+//        List<Integer> list1 = Arrays.stream().boxed().collect(Collectors.toList());
         Collectors.toList();
 
         Arrays.asList(a);
@@ -51,6 +51,7 @@ public class ArrayBasics {
         
         int[][] arr2 = new int[3][4];
         for (int j = 0; j <=n ; j++) {
+            int m = 0;
             for (int k = 0; j <= m ; j++) {
                 arr2[j][k] = i+j; // AIOBE
             }
