@@ -6,7 +6,7 @@ public class SinglyLinkedList {
 
     private static class ListNode {
         private int data; // Generic Type
-        private ListNode next;
+        private ListNode next; // Reference to next ListNode in list
 
         public ListNode(int data) {
             this.data = data;
