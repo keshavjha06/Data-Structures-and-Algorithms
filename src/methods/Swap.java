@@ -11,9 +11,9 @@ public class Swap {
         System.out.println(a+" "+b);
     }
     public static void main(String[] args) {
-       /* a = a ^ b;
-        b = a ^ b;
-        a = a ^ b;
+       /* a = a ^ b; a = a + b;
+          b = a ^ b; b = a - b;
+          a = a ^ b; a = a - b;
         System.out.println(a + " " + b); // 20 10 ✅*/
 //        int a = 10; int b = 20;
         Scanner sc = new Scanner(System.in);
