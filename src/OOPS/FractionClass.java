@@ -33,9 +33,14 @@ class Fraction {
     }
 
     void simplify() {
+        boolean isNegative = (num * denom < 0) ? true : false;
+        num = Math.abs(num);
+        denom = Math.abs(denom);
         int gcd = hcf(num, denom);
         num = num / gcd;
         denom = denom / gcd;
+        if (isNegative)
+            num = -num;
     }
 
     int hcf(int a, int b) {
@@ -47,7 +52,7 @@ class Fraction {
 
 public class FractionClass {
     static void main(String[] args) {
-        Fraction f1 = new Fraction(3, 7);
+        Fraction f1 = new Fraction(3, -7);
         // f1.print();
         Fraction f2 = new Fraction(7, 3);
         // f1.add(f2);
@@ -56,7 +61,7 @@ public class FractionClass {
         f1.print();
         // f1.divide(f2);
         // f1.print();
-        Fraction f3 = new Fraction(50, 100);
+        Fraction f3 = new Fraction(-50, -100);
         f3.print();
 
     }
