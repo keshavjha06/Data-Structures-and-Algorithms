@@ -1,44 +1,29 @@
 package OOPS;
 
-class PokemonClass {
-    int power;
-    String type;
+//Method Overloading (Compile-Time Polymorphism)
+//Same method name, different parameters , Happens at compile time
 
-    PokemonClass(String type, int power) {
-        this.power = power;
-        this.type = type;
+class Calculator {
+
+    int add(int a, int b) {
+        return a + b;
     }
 
-    PokemonClass() {
+    int add(int a, int b, int c) {
+        return a + b + c;
     }
 
-    void print() { // getter
-        System.out.println(this.power + " " + this.type);
+    double add(double a, double b) {
+        return a + b;
     }
-}
-
-class StrongPokemon extends PokemonClass { // child class / derived class
-    int speed;
-
-}
-
-class LegendaryPokemon extends PokemonClass { // child class / derived class
-    String specialAbility;
-
-}
-
-class GodPokemon extends LegendaryPokemon {
-    char tag;
-    
 }
 
 public class Inheritance {
     public static void main(String[] args) {
-        LegendaryPokemon mewtwo = new LegendaryPokemon();
-        mewtwo.specialAbility = "Pressure";
-        GodPokemon dialga = new GodPokemon();
-        dialga.tag = 'D';
+        Calculator c = new Calculator();
 
+        System.out.println(c.add(2, 3)); // 5
+        System.out.println(c.add(2, 3, 4)); // 9
+        System.out.println(c.add(2.5, 3.5)); // 6.0
     }
-
 }

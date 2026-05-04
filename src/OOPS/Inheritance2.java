@@ -1,36 +1,32 @@
 package OOPS;
 
-// class Vehicle {
-//     int wheels;
-//     int speed;
-//     int seats;
-// }
-
-// class PowerVehicle extends Vehicle {
-//     int engine;
-// }
-
-// class AirCrafts extends PowerVehicle {
-//     int wings;
-// }
+//Method Overriding (Runtime Polymorphism)
+//Subclass provides its own implementation of parent method.
+//JVM decides at runtime which method to call → runtime polymorphism
 
 class Animal {
-    int size;
-    boolean isVegetarian;
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
 }
 
-class Birds extends Animal {
-    int wingspan;
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
 }
 
-class AquaticAnimals extends Animal {
-    int fins;
+class Lion extends Animal {
+    void sound() {
+        System.out.println("Lion Roars");
+    }
 }
 
 public class Inheritance2 {
     public static void main(String[] args) {
-        // Vehicle cycle = new Vehicle();
-
+        Animal a = new Dog(); // parent reference, child object
+        Animal b = new Lion();
+        a.sound();
+        b.sound();
     }
-
 }
