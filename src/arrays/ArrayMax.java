@@ -2,7 +2,7 @@ package arrays;
 
 public class ArrayMax {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 23, 9, 20, 24};
+        int[] arr = { 1, 3, 23, 9, 20, 24 };
         System.out.println(max(arr));
         System.out.println(maxRange(arr, 2, 4));
 
@@ -10,7 +10,7 @@ public class ArrayMax {
 
     static int maxRange(int[] arr, int start, int end) {
 
-        if (end > start) {
+        if (start > end) {
             return -1;
         }
 
