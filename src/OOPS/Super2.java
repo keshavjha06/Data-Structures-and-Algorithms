@@ -3,13 +3,13 @@ package OOPS;
 // Call Parent Class Method
 // When method is overridden, use super to call parent version
 
-class Parent {
+class Parents {
     void show() {
         System.out.println("Parent method");
     }
 }
 
-class Child extends Parent {
+class Childs extends Parents {
     void show() {
         System.out.println("Child method");
     }
@@ -22,7 +22,7 @@ class Child extends Parent {
 
 public class Super2 {
     public static void main(String[] args) {
-        Child c = new Child();
+        Childs c = new Childs();
         c.display();
     }
 }

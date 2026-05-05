@@ -3,14 +3,14 @@ package OOPS;
 // Call Parent Constructor
 // Used to initialize parent class
 
-class Parent {
-    Parent() {
+class Parentss {
+    Parentss() {
         System.out.println("Parent constructor");
     }
 }
 
-class Child extends Parent {
-    Child() {
+class Childss extends Parentss {
+    Childss() {
         super(); // calls parent constructor
         System.out.println("Child constructor");
     }
@@ -18,7 +18,7 @@ class Child extends Parent {
 
 public class Super3 {
     public static void main(String[] args) {
-        Child c = new Child();
+        Childss c = new Childss();
     }
 }
 
