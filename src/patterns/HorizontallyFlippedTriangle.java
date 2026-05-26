@@ -7,8 +7,14 @@ public class HorizontallyFlippedTriangle {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for (int i = 1; i <= n; i++) {
+            // for (int j = n; j >= i; j--) {
             for (int j = 1; j <= n + 1 - i; j++) { // i + jmax = n + 1
-                System.out.print(" * " + " ");
+                // System.out.print(" * " + " ");
+                // System.out.print(i + " ");
+                // System.out.print((char)(j + 64) + " ");
+                // System.out.print((char)(i + 64) + " ");
+                // System.out.print((char)(j + 96) + " ");
+                System.out.print(j + " ");
             }
             System.out.println();
 
@@ -17,8 +23,11 @@ public class HorizontallyFlippedTriangle {
 
 }
 
-/* i + jmax = n + 1 ,             n = 4
-i = 1 => jmax = 4                 *   *   *   *  
-i = 2 => jmax = 3                 *   *   *  
-i = 3 => jmax = 2                 *   *  
-i = 4 => jmax = 1                 * */
+/*
+i + jmax = n + 1                   n = 4
+i = 1 => jmax = 4                  *   *   *   *  
+i = 2 => jmax = 3                  *   *   *  
+i = 3 => jmax = 2                  *   *  
+i = 4 => jmax = 1                  * 
+*/
+
