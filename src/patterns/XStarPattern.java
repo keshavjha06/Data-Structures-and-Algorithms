@@ -21,3 +21,13 @@ public class XStarPattern {
         }
     }
 }
+
+/*
+
+ *       * 
+  *   *   
+    *     
+  *   *   
+*       *  
+
+*/

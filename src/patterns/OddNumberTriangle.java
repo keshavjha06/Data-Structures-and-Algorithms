@@ -13,15 +13,22 @@ public class OddNumberTriangle {
             }
             System.out.println();
         }
+
+        // Alternative solution
+        for (int i = 1; i <= n; i++) {
+            int a = 1;
+            for (int j = 1; j <= i; j++) {
+                System.out.print(a + " ");
+                a = a + 2;
+            }
+            System.out.println();
+        }
     }
 }
 
-/*  Alternative solution
-for (int i = 1; i <= n; i++) {
-int a = 1;
-for (int j = 1; j <= i; j++) {
-System.out.print(a + " ");
-a = a + 2;
-}
-System.out.println();
-} */ 
+/* 
+1 
+1 3 
+1 3 5 
+1 3 5 7 
+1 3 5 7 9  */

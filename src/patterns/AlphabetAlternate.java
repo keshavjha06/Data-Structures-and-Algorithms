@@ -18,3 +18,10 @@ public class AlphabetAlternate {
         }
     }
 }
+
+/* 
+a a a a a 
+B B B B B 
+c c c c c 
+D D D D D 
+e e e e e  */

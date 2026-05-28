@@ -11,9 +11,28 @@ public class StarSquare {
             for (int j = 1; j <= n; j++) {
                 // System.out.print("* ");
                 // System.out.print(j + " ");
-                System.out.print(i + " ");
+                 System.out.print(i + " ");
             }
             System.out.println();
         }
     }
 }
+
+/*
+1 1 1 1 1        
+2 2 2 2 2 
+3 3 3 3 3 
+4 4 4 4 4 
+5 5 5 5 5 
+
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5
+
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * *  */
