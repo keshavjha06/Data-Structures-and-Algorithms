@@ -15,6 +15,8 @@ public class Sets_Collection {
         set.add(11);
         set.add(45);
         set.add(3);
+        for (int ele : set)
+            System.out.print(ele + " ");
         System.out.println(set.size());
         System.out.println(set);
         System.out.println(set.contains(45) + " " + set.contains(18));
@@ -22,5 +24,5 @@ public class Sets_Collection {
         System.out.println(set.contains(21));
         System.out.println(set.size());
     }
-    
+
 }
