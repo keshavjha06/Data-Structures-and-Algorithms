@@ -2,7 +2,7 @@ package maps_and_sets;
 
 import java.util.HashMap;
 
-public class MostFrequetChar {
+public class MostFrequentChar {
     public static void main(String[] args) {
         String s = "testsample";
         System.out.println(mostFrequent(s));
